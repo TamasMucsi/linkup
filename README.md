@@ -1,2 +1,2 @@
-# linkup
+# LinkUp
 LinkUp - online fórum (projekt)
