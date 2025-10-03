@@ -1,0 +1,17 @@
+.logo{
+    height: 50px;
+}
+
+.center{
+    margin: auto;
+    text-align: center;
+    padding-right: 200px;
+}
+
+.navbar{
+    background-color: #1B3C53 !important;
+}
+
+.nav-link{
+    color: aliceblue !important;
+}
