@@ -58,8 +58,19 @@
 
 
 .footer{
-    background-color: aliceblue;
+    background-color: #1B3C53;
+    color: aliceblue;
+
+
 }
+.footer li{
+    display: inline;
+
+}
+.footer img{
+    height: 24px;
+    width: 24px;
+} 
 
 
 
