@@ -9,11 +9,49 @@ body {
     width: 100%;
 }
 
-a{
-    text-decoration: none;
+.side-hide-but{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: aliceblue !important;
+    border: none;
 }
 
-.mini-search{
+.side-hide-but:hover, side-hide-but:active, side-hide-but:focus{
+    background-color: #456882 !important;
+    color: aliceblue !important;
+    border: none;
+}
+
+.sidebar-title {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    color: aliceblue !important;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 120%;
+    width: 300px;
+    border-radius: 0 !important;
+    text-align: left;
+}
+
+.sidebar-main {
+    color: aliceblue !important;
+    background-color: #223542 !important;
+    width: 300px;
+    padding-top: 15px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4) inset;
+}
+
+.sidebar-item {
+    color: aliceblue !important;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.col-sm-1 {
+    padding: 0;
+}
+
+.mini-search {
     height: 40px !important;
     padding: 0;
 }
@@ -38,7 +76,7 @@ a{
     color: aliceblue !important;
 }
 
-.btn-outline-success:focus{
+.btn-outline-success:focus {
     outline: none;
     cursor: pointer;
     border: none;
@@ -58,7 +96,7 @@ a{
     color: aliceblue !important;
 }
 
-.btn-outline-success:active{
+.btn-outline-success:active {
     outline: none;
     cursor: pointer;
     border: none;
@@ -135,16 +173,6 @@ text-body-secondary2 {
     padding-right: 200px;
 }
 
-.navbar {
-    background-color: #223542 !important;
-}
-
-.nav-link {
-    color: aliceblue !important;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
 .homebody {
     background-image: url(../assets/images/home_bck.png);
     background-repeat: no-repeat;
@@ -162,7 +190,24 @@ text-body-secondary2 {
 
 /* Gomb szarságok */
 .button-home {
-    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 10px !important;
+    overflow: hidden;
+    background-color: #223542;
+    color: aliceblue !important;
+}
+
+.button-home:hover {
     cursor: pointer;
     border: none;
     padding: 0.9rem 2rem;
@@ -203,7 +248,7 @@ text-body-secondary2 {
 .button-home::before {
     content: "";
     background-color: #223542;
-    width: 120%;
+    width: 140%;
     left: -10%;
     transform: skew(30deg);
     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
@@ -211,7 +256,9 @@ text-body-secondary2 {
 
 .button-home:hover::before {
     transform: translate3d(100%, 0, 0);
+    border: none;
 }
+
 
 /* Tomi része */
 
@@ -295,4 +342,34 @@ text-body-secondary2 {
     ul {
         margin-top: 40px;
     }
+}
+
+/* grand prize tutorial code */
+.sidebar-main {
+    width: 300px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-collapsed {
+    transform: translateX(-100%);
+}
+
+.content-wrapper {
+    margin-left: 300px;
+    transition: margin-left 0.3s ease;
+}
+
+.content-full {
+    margin-left: 0;
+}
+
+.toggle-btn {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1050;
 }
