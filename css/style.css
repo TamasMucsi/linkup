@@ -283,13 +283,30 @@ text-body-secondary2 {
 }
 
 .toggle-btn {
-    position: relative;
     top: 10px;
     left: 10px;
     z-index: 1050;
 }
 
+.posts{
+    width: 60%;
+    margin: auto;
+}
 
+.post-div{
+    background-color: #223542;
+    color: aliceblue !important;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+.message{
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.052);
+    color: aliceblue !important;
+    padding: 15px;
+}
 
 
 

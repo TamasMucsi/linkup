@@ -1,93 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Sidebar with Toggle</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body style="background-color: #141f27 !important;">
-<header id="navbar"></header>
 
-<div class="row">
-  <!-- Sidebar -->
-  <div id="sidebarContainer" class="col-sm-1" style="position: fixed;">
-    <div class="sidebar-main" id="sidebar">
-      <div style="list-style-type: none; list-style-position: outside;">
-        <div class="sidebar-item2" style="margin-top: 75px;">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Home </span></button>
-          </a>
-        </div>
-        <div class="sidebar-item2">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Popular </span></button>
-          </a>
-        </div>
-        <div class="sidebar-item2">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Trending Today </span></button>
-          </a>
-        </div>
-        <div class="sidebar-item2" style="padding-left: 10px;">
-          <a href="#" class="sidebar-title">
-            <br><hr>Communities<hr>
-          </a>
-        </div>
-        <div class="sidebar-item2">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > My Communities </span></button>
-          </a>
-        </div>
-        <div class="sidebar-item2">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Create Community </span></button>
-          </a>
-        </div>
-        <div class="sidebar-item2">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Search Communities </span></button>
-          </a>
-        </div>
-        <div class="sidebar-item2" style="padding-left: 10px;">
-          <a href="#" class="sidebar-title">
-            <br><hr>Personal<hr>
-          </a>
-        </div>
-        <div class="sidebar-item2">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Profile </span></button>
-          </a>
-        </div>
-        <div class="sidebar-item2">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Inbox </span></button>
-          </a>
-        </div>
-        <div class="sidebar-item2">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Settings </span></button>
-          </a>
-        </div>
-        <div class="sidebar-item2">
-          <a href="#" class="sidebar-item">
-            <button class="button-home d-block" style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Logout </span></button>
-          </a>
+<body style="background-color: #1c2c36 !important;">
+  <header id="navbar"></header>
+
+  <div class="row">
+    <!-- Sidebar -->
+    <div id="sidebarContainer" class="col-sm-1" style="position: fixed;">
+      <div class="sidebar-main" id="sidebar">
+        <div style="list-style-type: none; list-style-position: outside;">
+          <div class="sidebar-item2" style="margin-top: 75px;">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Home
+                </span></button>
+            </a>
+          </div>
+          <div class="sidebar-item2">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Popular
+                </span></button>
+            </a>
+          </div>
+          <div class="sidebar-item2">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Trending
+                  Today </span></button>
+            </a>
+          </div>
+          <div class="sidebar-item2" style="padding-left: 10px;">
+            <a href="#" class="sidebar-title">
+              <br>
+              <hr>Communities
+              <hr>
+            </a>
+          </div>
+          <div class="sidebar-item2">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > My
+                  Communities </span></button>
+            </a>
+          </div>
+          <div class="sidebar-item2">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Create
+                  Community </span></button>
+            </a>
+          </div>
+          <div class="sidebar-item2">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Search
+                  Communities </span></button>
+            </a>
+          </div>
+          <div class="sidebar-item2" style="padding-left: 10px;">
+            <a href="#" class="sidebar-title">
+              <br>
+              <hr>Personal
+              <hr>
+            </a>
+          </div>
+          <div class="sidebar-item2">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Profile
+                </span></button>
+            </a>
+          </div>
+          <div class="sidebar-item2">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Inbox
+                </span></button>
+            </a>
+          </div>
+          <div class="sidebar-item2">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Settings
+                </span></button>
+            </a>
+          </div>
+          <div class="sidebar-item2">
+            <a href="#" class="sidebar-item">
+              <button class="button-home d-block"
+                style="width: 100%; border-radius: 0 !important; text-align: left; font-weight: 300;"><span> > Logout
+                </span></button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Main Content -->
-  <div id="content" class="col content-wrapper p-3">
-    <!-- sidebar toggle gomb -->
-    <button class="btn btn-primary toggle-btn side-hide-but" style="margin-top: 60px;" onclick="toggleSidebar()">☰</button>
-    
-    <!-- posztok -->
+    <!-- Main Content -->
+    <div id="content" class="col content-wrapper p-3">
+
+
+      <!-- posztok -->
+      <div class="posts" style="margin-top: 100px;">
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>Finally stopped checking my phone first thing in the morning.</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/digitalbalance</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/slowmorning</p>
+          <div class="message">I use the first 30 minutes of my day for quiet, coffee, and stretching. It changed the tone of my whole day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.1k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  465
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>Started cooking all my meals for the week on Sunday.</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/frugalliving</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/batchbites</p>
+          <div class="message">I save money, eat better, and avoid the “what should I eat?” stress.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  2.9k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  398
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>Not every message needs an instant reply.</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/mentalclarity</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/presentmode</p>
+          <div class="message">Giving myself permission to pause before responding reduced my anxiety a lot.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+        <br>
+        <div class="post-div">
+          <h4>What's a small habit that changed your life?</h4>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Space:</span>
+            p/selfimprovement</p>
+          <p style="text-indent: 25px; font-size: 80%; margin: 0px;"><span style="font-weight: bolder;">Author:</span>
+            u/mindshiftdaily</p>
+          <div class="message">I started writing down three things I’m grateful for every morning. It sounds cheesy, but
+            it completely shifted how I view my day.</div>
+          <div class="message">
+            <div class="row" style="width: 25%;">
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/like.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  3.2k
+                </div>
+              </div>
+              <div class="col-sm-6 mb-3 mb-sm-1">
+                <div class="card3">
+                  <img src="assets/icons/chat-bubble.png" alt=""
+                    style="filter: brightness(0) invert(1); height: 25px; width: 25px;">
+                  512
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- poszt vége -->
+      </div>
+    </div>
   </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>

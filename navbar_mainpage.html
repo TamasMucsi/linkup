@@ -13,20 +13,26 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
+                        <!-- sidebar toggle gomb -->
+            <button class="btn btn-primary toggle-btn side-hide-but" style="margin: 5px"
+                onclick="toggleSidebar()">☰</button>
             <a class="navbar-brand" href="index.html">
                 <img class="logo" src="assets/images/logo.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="container-fluid">
                     <form class="d-flex mini-search" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 30%; margin: auto;"/>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            style="width: 30%; margin: auto;" />
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
+
         </div>
     </nav>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
