@@ -412,6 +412,7 @@ text-body-secondary2 {
 .policy{
     color: #223542;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 .justify{
     text-align: justify;
@@ -421,4 +422,13 @@ text-body-secondary2 {
 }
 .policymain li{
     margin-left: 25px;
+}
+
+
+.pbold{
+    font-weight: bold;
+}
+
+.plink{
+    text-decoration: none;
 }
