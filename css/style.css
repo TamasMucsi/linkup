@@ -332,3 +332,27 @@ text-body-secondary2 {
         margin-top: 40px;
     }
 }
+
+
+
+
+
+
+
+.doltszovegpolicy{
+    font-style: italic;
+    font-size: small;
+}
+.policy{
+    color: #223542;
+    margin-top: 100px;
+}
+.justify{
+    text-align: justify;
+}
+.policymain{
+    text-shadow: none;
+}
+.policymain li{
+    margin-left: 25px;
+}
