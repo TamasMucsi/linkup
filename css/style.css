@@ -411,3 +411,7 @@ text-body-secondary2 {
 .pbold{
     font-weight: bold;
 }
+
+.plink{
+    text-decoration: none;
+}
