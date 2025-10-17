@@ -179,6 +179,12 @@ text-body-secondary2 {
     background-color: rgb(9, 17, 30);
 }
 
+.homebody2 {
+    background-image: url(../assets/images/home_bck_flip.png);
+    background-repeat: no-repeat;
+    background-color: rgb(9, 17, 30);
+}
+
 .footer {
     background-color: #223542 !important;
     color: aliceblue !important;
