@@ -18,28 +18,9 @@ else{
     })
     .catch(error => console.error("Loading failed! :(", error));
     toggleSidebar()
-}
-let fter = document.querySelector(".footer")
-if (fter) {
-    fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-        document.querySelector(".footer").innerHTML = data;
-    })
-    .catch(error => console.error("Loading failed", error));
-
-}
 
 
-function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    const content = document.getElementById('content');
-    sidebar.classList.toggle('sidebar-collapsed');
-    content.classList.toggle('content-full');
-  }
-
-
-  document.querySelectorAll('.buttonxdxd').forEach(button => {
+    document.querySelectorAll('.buttonxdxd').forEach(button => {
 
     button.addEventListener('click', e => {
         button.classList.toggle('liked');
@@ -67,4 +48,26 @@ function toggleSidebar() {
     })
 
 });
+}
+let fter = document.querySelector(".footer")
+if (fter) {
+    fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+        document.querySelector(".footer").innerHTML = data;
+    })
+    .catch(error => console.error("Loading failed", error));
+
+}
+
+
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const content = document.getElementById('content');
+    sidebar.classList.toggle('sidebar-collapsed');
+    content.classList.toggle('content-full');
+  }
+
+
+
 
