@@ -48,6 +48,8 @@ else{
     })
 
 });
+
+
 }
 let fter = document.querySelector(".footer")
 if (fter) {
