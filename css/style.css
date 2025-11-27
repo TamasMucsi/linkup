@@ -525,6 +525,7 @@ text-body-secondary2 {
         background: var(--background);
         box-shadow: inset 0 0 0 var(--border-width, 1px) var(--border), 0 4px 8px var(--shadow), 0 8px 20px var(--shadow);
     }
+    
     .hand {
         width: 11px;
         height: 11px;
@@ -586,6 +587,7 @@ text-body-secondary2 {
             }
         }
     }
+    
     .hand,
     span {
         display: inline-block;
