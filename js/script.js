@@ -73,3 +73,34 @@ function toggleSidebar() {
 
 
 
+function startTime() {
+      const today = new Date();
+      let Y = today.getFullYear();
+      let M = today.getMonth()+1;
+      let d = today.getDate();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('ora').innerHTML = Y + "." + M + "." + d + " " +  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers <script 10
+      return i;
+    }
+
+    
+function downld() {
+        let fasz = 23230;
+        fasz = fasz+1;
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            
+        }
+        setTimeout(downld, 1000);
+        document.querySelector(".dwnload").innerHTML = fasz;
+        
+    }

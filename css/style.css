@@ -780,3 +780,8 @@ html {
         transform: translateX(var(--span-x, 4px)) translateZ(0);
     }
 }
+
+.info{
+    background-color: #1c2c36;
+    height: 800px;
+}
