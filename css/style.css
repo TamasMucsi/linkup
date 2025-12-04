@@ -176,12 +176,14 @@ text-body-secondary2 {
 .homebody {
     background-image: url(../assets/images/home_bck.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(9, 17, 30);
 }
 
 .homebody2 {
     background-image: url(../assets/images/home_bck_flip.png);
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(9, 17, 30);
 }
 
