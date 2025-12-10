@@ -1,3 +1,4 @@
+// Navbar
 let nvar = document.getElementById("navbar-ref");
 if (nvar) {
     fetch("navbar.html")
@@ -7,8 +8,7 @@ if (nvar) {
     })
     .catch(error => console.error("Loading failed! :(", error));
 }
-// let nvbar = document.getElementById("navbar");
-// if (nvbar)
+// Navbar 2
 else{
 
     fetch("navbar_mainpage.html")
@@ -19,7 +19,7 @@ else{
     .catch(error => console.error("Loading failed! :(", error));
     toggleSidebar()
 
-
+// Like gomb animacio
     document.querySelectorAll('.buttonxdxd').forEach(button => {
 
     button.addEventListener('click', e => {
@@ -49,7 +49,7 @@ else{
 
 });
 
-
+// Footer
 }
 let fter = document.querySelector(".footer")
 if (fter) {
@@ -62,7 +62,7 @@ if (fter) {
 
 }
 
-
+// Sidebar cuccok
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     const content = document.getElementById('content');
@@ -72,7 +72,7 @@ function toggleSidebar() {
 
 
 
-
+// Idozito
 function startTime() {
       const today = new Date();
       let Y = today.getFullYear();
@@ -88,19 +88,21 @@ function startTime() {
     }
     
     function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers <script 10
+      if (i < 10) {i = "0" + i};
       return i;
     }
 
-    
-function downld() {
-        let fasz = 23230;
-        fasz = fasz+1;
-        for (let index = 0; index < array.length; index++) {
-            const element = array[index];
-            
-        }
-        setTimeout(downld, 1000);
-        document.querySelector(".dwnload").innerHTML = fasz;
-        
+
+// letoltes szamlalo
+let downloadCount = 5376867;
+const increaseChance = 0.1;
+
+function updateCounter() {
+    if (Math.random() < increaseChance) {
+        downloadCount++;
+        document.getElementById("dwnload").innerHTML = 
+            downloadCount;
     }
+}
+
+setInterval(updateCounter, 1000);
